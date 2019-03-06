@@ -10,12 +10,12 @@ namespace AgileTesting
 {
     class GuestDBContext : DbContext
     {
-        public DbSet<Guest> guests { get; set; }
-        public DbSet<Calendar> calendars { get; set; }
-        public DbSet<Stay> stays { get; set; }
-        public DbSet<Rule> rules { get; set; }
-        public DbSet<Strike> strikes { get; set; }
-        public DbSet<EmergencyContact> emergencyContact { get; set; }
+        public DbSet<Guest> Guests { get; set; }
+        public DbSet<Calendar> Calendars { get; set; }
+        public DbSet<Stay> Stays { get; set; }
+        public DbSet<Rule> Rules { get; set; }
+        public DbSet<Strike> Strikes { get; set; }
+        public DbSet<EmergencyContact> EmergencyContact { get; set; }
 
     }
 }
