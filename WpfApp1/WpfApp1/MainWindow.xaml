@@ -1,0 +1,65 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+    Title="MainWindow" Height="450" Width="1000">
+    <Grid>
+        <Grid.Resources>
+            <DataTemplate x:Key="DateTemplate" >
+
+            </DataTemplate>
+        </Grid.Resources>
+        <DataGrid Name="grdCalendar" ItemsSource="{Binding}" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="311" Margin="10,82,0,0" VerticalAlignment="Top" Width="970">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Header="Strike 1" Binding="{Binding isStrike1}"/>
+                <DataGridCheckBoxColumn Header="Strike 2" Binding="{Binding isStrike2}"/>
+                <DataGridCheckBoxColumn Header="Strike 3" Binding="{Binding isStrike3}"/>
+                <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}"/>
+                <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}"/>
+                <DataGridTemplateColumn Header="1" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="2" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="3" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="4" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="5" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="6" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="7" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="8" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="9" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="10" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="11" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="12" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="13" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="14" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="15" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="16" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="17" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="18" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="19" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="20" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="21" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="22" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="23" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="24" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="25" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="26" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="27" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="28" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="29" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="30" CellTemplate="{StaticResource DateTemplate}"/>
+                <DataGridTemplateColumn Header="31" CellTemplate="{StaticResource DateTemplate}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid Margin="668,10,13.333,355.667">
+            <Button x:Name="AddNewGuestBtn" Content="New Guest" HorizontalAlignment="Left" Margin="0,31,0,0" VerticalAlignment="Top" Width="97" Height="24"/>
+            <Label Content="Search for Guest:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="Guest Name" VerticalAlignment="Top" Width="118" Margin="105,0,0,0"/>
+            <Button Content="View Reports" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Height="24" RenderTransformOrigin="0.5,0.538" Margin="228,31,0,0"/>
+            <Button Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Height="26" Margin="228,0,0,0"/>
+            <Button Content="Update Guest Stays" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Height="24" Margin="105,31,0,0"/>
+        </Grid>
+        <Label Content="February 2019" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="25" FontWeight="Bold"/>
+    </Grid>
+</Window>
