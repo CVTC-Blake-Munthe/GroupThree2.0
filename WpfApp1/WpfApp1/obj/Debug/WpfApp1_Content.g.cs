@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("guest_model.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("guest_model.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("shelter.mdf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("shelter_log.ldf")]
 
