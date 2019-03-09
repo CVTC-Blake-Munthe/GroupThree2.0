@@ -20,9 +20,22 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private void AddNewGuestBtn_Click(object sender, RoutedEventArgs e)
+
+        {
+
+            var guest = new System.Windows.Window();
+            guest.Content = new Guest();
+            guest.Show();
+            this.Close();
+
+        }
+
         public MainWindow()
         {
             InitializeComponent();
+
+
         }
     }
 }
