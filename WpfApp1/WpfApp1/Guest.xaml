@@ -104,21 +104,21 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Label Content="First Name:" Grid.Row="1" Style="{StaticResource Label}"/>
-                <TextBox x:Name="add_guestFNameTextBox" Grid.Row="1" Style="{StaticResource GuestTextBox}"
+                <Label Content="First Name:" Grid.Row="0" Style="{StaticResource Label}"/>
+                <TextBox x:Name="add_guestFNameTextBox" Grid.Row="0" Style="{StaticResource GuestTextBox}"
                   Text="{Binding GuestFName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true }"/>
-                <Label Content="Middle Initial:" Grid.Row="2" Style="{StaticResource Label}"/>
-                <TextBox x:Name="add_guestMInitialTextBox" Grid.Row="2" Style="{StaticResource GuestTextBox}"
+                <Label Content="Middle Initial:" Grid.Row="1" Style="{StaticResource Label}"/>
+                <TextBox x:Name="add_guestMInitialTextBox" Grid.Row="1" Style="{StaticResource GuestTextBox}"
                   Text="{Binding GuestMInitial, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
-                <Label Content="Last Name:" Grid.Row="3" Style="{StaticResource Label}"/>
-                <TextBox x:Name="add_guestLNameTextBox" Grid.Row="3" Style="{StaticResource GuestTextBox}"
+                <Label Content="Last Name:" Grid.Row="2" Style="{StaticResource Label}"/>
+                <TextBox x:Name="add_guestLNameTextBox" Grid.Row="2" Style="{StaticResource GuestTextBox}"
                   Text="{Binding GuestLName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
-                <Label Content="Gender:" Grid.Row="4" Style="{StaticResource Label}"/>
-                <TextBox x:Name="add_guestGenderTextBox" Grid.Row="4" Style="{StaticResource GuestTextBox}"
+                <Label Content="Gender:" Grid.Row="3" Style="{StaticResource Label}"/>
+                <TextBox x:Name="add_guestGenderTextBox" Grid.Row="3" Style="{StaticResource GuestTextBox}"
                   Text="{Binding GuestGender, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
                 <Label Content="Date of Birth:" Grid.Row="4" Style="{StaticResource Label}"/>
-                <DatePicker x:Name="add_guestDateOfBirthDatePicker" HorizontalAlignment="Left" Margin="122,4,0,4" Grid.Column="1" Grid.Row="0"
-                  Text="{Binding GuestDateOfBirth, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                <DatePicker x:Name="add_guestDateOfBirthDatePicker" HorizontalAlignment="Left" Margin="-122,4,0,4" Grid.Column="1" Grid.Row="4" 
+                  SelectedDate="{Binding GuestDateOfBirth, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, UpdateSourceTrigger=PropertyChanged}"/>
                 <Label Content="Social Security:" Grid.Column="1" Grid.Row="0" Style="{StaticResource Label}"/>
                 <TextBox x:Name="add_guestSocialSecurityTextBox" Grid.Column="1" Grid.Row="0" Style="{StaticResource GuestTextBox}"
                   Text="{Binding GuestSocialSecurity, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>

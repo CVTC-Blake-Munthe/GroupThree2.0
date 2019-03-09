@@ -24,6 +24,7 @@ namespace WpfApp1
         GuestEntities context = new GuestEntities();
         CollectionViewSource guestViewSource;
 
+
         private void LastCommandHandler(object sender, ExecutedRoutedEventArgs e)
         {
             guestViewSource.View.MoveCurrentToLast();
@@ -76,7 +77,7 @@ namespace WpfApp1
                 // is being tracked by EF now.  
                 Guest newGuest = new Guest
                 {
-                    //    GuestID = Convert.ToInt32(add_guestIDTextBox.Text),
+                    
                     FirstName = add_guestFNameTextBox.Text,
                     MiddleInitial = add_guestMInitialTextBox.Text,
                     LastName = add_guestLNameTextBox.Text,
@@ -102,9 +103,15 @@ namespace WpfApp1
                             break;
                         }
                     }*/
+
+                // Null exception error occurring with guestViewSource.View.Refresh()
+
                 context.Guests.Add(newGuest);
-                guestViewSource.View.Refresh();
-                guestViewSource.View.MoveCurrentTo(newGuest);
+                if (guestViewSource.View != null)
+                {
+                    guestViewSource.View.Refresh();
+                    guestViewSource.View.MoveCurrentTo(newGuest);
+                }
 
                 /*   else
                    {
@@ -168,6 +175,7 @@ namespace WpfApp1
             // Save the changes, either for a new customer, a new order  
             // or an edit to an existing customer or order.
             context.SaveChanges();
+            
         }
 
         // Sets up the form so that user can enter data. Data is later  
@@ -271,6 +279,7 @@ namespace WpfApp1
                 Order obj = e.Parameter as Order;
                 Delete_Order(obj);
             }*/
+
 
         public Guest()
         {

@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace WpfApp1
 {
@@ -20,6 +23,7 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+         
         private void AddNewGuestBtn_Click(object sender, RoutedEventArgs e)
 
         {
@@ -27,15 +31,16 @@ namespace WpfApp1
             var guest = new System.Windows.Window();
             guest.Content = new Guest();
             guest.Show();
-            this.Close();
+            
 
         }
 
         public MainWindow()
         {
             InitializeComponent();
-
+            
 
         }
+
     }
 }
