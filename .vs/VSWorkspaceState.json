@@ -2,7 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\GroupThreeApp",
-    "\\GroupThreeApp\\GroupThreeApp"
+    "\\GroupThreeApp\\GroupThreeApp",
+    "\\WpfApp1"
   ],
+  "SelectedNode": "\\WpfApp1\\WpfApp1.sln",
   "PreviewInSolutionExplorer": false
 }
