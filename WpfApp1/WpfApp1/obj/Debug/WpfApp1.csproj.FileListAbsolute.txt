@@ -46,3 +46,28 @@ C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj
 C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
 C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
 C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\bin\Debug\Shelter.mdf
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\bin\Debug\Shelter_log.ldf
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\bin\Debug\EntityFramework.dll
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\bin\Debug\EntityFramework.SqlServer.dll
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\bin\Debug\EntityFramework.xml
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\bin\Debug\EntityFramework.SqlServer.xml
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\Guest.g.cs
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1_Content.g.cs
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\Guest.baml
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
