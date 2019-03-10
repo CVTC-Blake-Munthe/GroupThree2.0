@@ -71,3 +71,4 @@ E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\Group
 E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
 E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
 E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+E:\Downloads\Downloads\School stuff\Agile Prog with Design Patterns\Week 8\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.ProfilePage.resources
