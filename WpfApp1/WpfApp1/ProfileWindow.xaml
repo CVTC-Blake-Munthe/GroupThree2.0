@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="ProfileWindow" Height="667.059" Width="1103.089" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="120" Margin="308,140,0,0" TextWrapping="Wrap" Text="This is my Test Message" VerticalAlignment="Top" Width="395" Background="#FFBF2F2F"/>
+        <TextBox HorizontalAlignment="Left" Height="120" Margin="308,140,0,0" TextWrapping="Wrap" Text="This is my Test Message" VerticalAlignment="Top" Width="395" Background="#FFBF2F2F" FontSize="48"/>
 
     </Grid>
 </Window>
