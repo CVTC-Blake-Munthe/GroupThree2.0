@@ -30,7 +30,6 @@ C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\bin\Debug\EntityFramewor
 C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\bin\Debug\EntityFramework.xml
 C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
 C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\Guest.g.cs
 C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
 C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\App.g.cs
@@ -43,6 +42,6 @@ C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.reso
 C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
 C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
 C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
-C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
 C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
 C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\Sam\Source\Repos\GroupThree2.0\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojResolveAssemblyReference.cache

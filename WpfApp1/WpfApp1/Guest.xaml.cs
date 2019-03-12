@@ -107,11 +107,11 @@ namespace WpfApp1
                 // Null exception error occurring with guestViewSource.View.Refresh()
 
                 context.Guests.Add(newGuest);
-                if (guestViewSource.View != null)
+               /* if (guestViewSource.View != null)
                 {
                     guestViewSource.View.Refresh();
                     guestViewSource.View.MoveCurrentTo(newGuest);
-                }
+                }*/
 
                 /*   else
                    {
