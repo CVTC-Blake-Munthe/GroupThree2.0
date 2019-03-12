@@ -178,6 +178,7 @@
       <DependentUpon>Guest_model.edmx</DependentUpon>
       <LastGenOutput>Guest_model.cs</LastGenOutput>
     </Content>
+    <Resource Include="Images\person.jpg" />
     <Content Include="Shelter.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

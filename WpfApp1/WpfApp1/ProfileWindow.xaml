@@ -6,8 +6,37 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="ProfileWindow" Height="667.059" Width="1103.089" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <TextBox HorizontalAlignment="Left" Height="120" Margin="308,140,0,0" TextWrapping="Wrap" Text="This is my Test Message" VerticalAlignment="Top" Width="395" Background="#FFBF2F2F" FontSize="48"/>
+    <Grid MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+        <Grid HorizontalAlignment="Left" Height="636" VerticalAlignment="Top" Width="275" Background="#FF6B0EB8">
+            <Label Content="John" HorizontalAlignment="Left" Height="58" Margin="10,123,0,0" VerticalAlignment="Top" Width="206" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White"/>
+            <Label Content="715-123-4567" HorizontalAlignment="Left" Height="58" Margin="10,417,0,0" VerticalAlignment="Top" Width="206" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White"/>
+            <Label Content="###-##-1234" HorizontalAlignment="Left" Height="58" Margin="10,301,0,0" VerticalAlignment="Top" Width="206" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White"/>
+            <Label Content="January 1 1937" HorizontalAlignment="Left" Height="58" Margin="10,359,0,0" VerticalAlignment="Top" Width="206" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White"/>
+            <Label Content="Male" HorizontalAlignment="Left" Height="58" Margin="10,239,0,0" VerticalAlignment="Top" Width="206" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White"/>
+            <Label Content="Smith" HorizontalAlignment="Left" Height="58" Margin="10,181,0,0" VerticalAlignment="Top" Width="206" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White" RenderTransformOrigin="0.51,3.084"/>
+            <CheckBox Content="Paperwork Completed" HorizontalAlignment="Left" Margin="10,605,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White"/>
+            <Label Content="Guest Info:" HorizontalAlignment="Left" Height="58" Margin="10,60,0,0" VerticalAlignment="Top" Width="206" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White"/>
+            <Label Content="Strikes:" HorizontalAlignment="Left" Height="58" Margin="276,574,-93,0" VerticalAlignment="Top" Width="92" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="Black"/>
+            <Label Content="Number of Days Stayed in the Last 30:" HorizontalAlignment="Left" Height="58" Margin="276,444,-441,0" VerticalAlignment="Top" Width="440" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="Black"/>
+            <Label Content="Total Number of Days Stayed: " HorizontalAlignment="Left" Height="58" Margin="276,511,-348,0" VerticalAlignment="Top" Width="347" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="Black"/>
+            <Label Content="Unknown" HorizontalAlignment="Left" Height="58" Margin="368,576,-216,0" VerticalAlignment="Top" Width="123" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="Black"/>
+            <Label Content="Unknown" HorizontalAlignment="Left" Height="58" Margin="616,513,-464,0" VerticalAlignment="Top" Width="123" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="Black"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="56" Margin="257,0,0,0" VerticalAlignment="Top" Width="581" Background="#FF6B0EB8"/>
+        <Grid HorizontalAlignment="Left" Height="636" VerticalAlignment="Top" Width="275" Background="#FF6B0EB8" Margin="820,0,0,0">
+            <Label Content="John" HorizontalAlignment="Left" Height="58" Margin="10,125,0,0" VerticalAlignment="Top" Width="206" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White"/>
+            <Label Content="715-123-4567" HorizontalAlignment="Left" Height="58" Margin="10,357,0,0" VerticalAlignment="Top" Width="206" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White"/>
+            <Label Content="January 1 1937" HorizontalAlignment="Left" Height="58" Margin="10,299,0,0" VerticalAlignment="Top" Width="206" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White"/>
+            <Label Content="Male" HorizontalAlignment="Left" Height="58" Margin="10,241,0,0" VerticalAlignment="Top" Width="206" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White"/>
+            <Label Content="Messerschmidt" HorizontalAlignment="Left" Height="58" Margin="10,183,0,0" VerticalAlignment="Top" Width="206" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White" RenderTransformOrigin="0.51,3.084"/>
+            <Label Content="Friend" HorizontalAlignment="Left" Height="58" Margin="10,415,0,0" VerticalAlignment="Top" Width="206" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White"/>
+            <Label Content="Emergency Contact:" HorizontalAlignment="Left" Height="60" Margin="10,60,-95,0" VerticalAlignment="Top" Width="360" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White"/>
+            <TextBox HorizontalAlignment="Left" Height="36" Margin="19,10,0,0" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="236" FontSize="22"/>
+            <Label Content="Profile Page" HorizontalAlignment="Center" Height="60" Margin="-408,-4,135,0" VerticalAlignment="Top" Width="548" FontSize="36" FontWeight="Bold" Background="{x:Null}" Foreground="White"/>
+        </Grid>
+        <Image HorizontalAlignment="Left" Height="325" Margin="354,90,0,0" VerticalAlignment="Top" Width="390" Source="Images/person.jpg"/>
+        <Label Content="Unknown" HorizontalAlignment="Left" Height="58" Margin="707,446,0,0" VerticalAlignment="Top" Width="123" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="Black"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="711,14,0,0" VerticalAlignment="Top" Width="123" Height="31" FontSize="22"/>
 
     </Grid>
 </Window>
