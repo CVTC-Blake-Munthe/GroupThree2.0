@@ -1,0 +1,138 @@
+﻿<UserControl x:Class="WpfApp1.Guest"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Loaded="UserControl_Loaded_1">
+    <UserControl.Resources>
+        <CollectionViewSource x:Key="guestViewSource" d:DesignSource="{d:DesignInstance {x:Type local:Guest}, CreateList=True}"/>
+        <Style x:Key="Label" TargetType="{x:Type Label}" BasedOn="{x:Null}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="3"/>
+            <Setter Property="Height" Value="23"/>
+        </Style>
+        <Style x:Key="GuestTextBox" TargetType="{x:Type TextBox}" BasedOn="{x:Null}">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="3"/>
+            <Setter Property="Height" Value="26"/>
+            <Setter Property="Width" Value="120"/>
+        </Style>
+        <RoutedUICommand x:Key="DeleteGuestCommand" Text="Delete Guest"/>
+        <RoutedUICommand x:Key="UpdateCommand" Text="Update Guest Info"/>
+        <RoutedUICommand x:Key="AddCommand" Text="Add Guest"/>
+        <Style x:Key="NavButton" TargetType="{x:Type Button}" BasedOn="{x:Null}">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
+            <Setter Property="Margin" Value="2,2,2,0"/>
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Height" Value="auto"/>
+        </Style>
+    </UserControl.Resources>
+    <UserControl.CommandBindings>
+        <CommandBinding Command="{StaticResource DeleteGuestCommand}" Executed="DeleteGuestCommandHandler"/>
+        <CommandBinding Command="{StaticResource UpdateCommand}" Executed="UpdateCommandHandler"/>
+        <CommandBinding Command="{StaticResource AddCommand}" Executed="AddCommandHandler"/>
+    </UserControl.CommandBindings>
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Margin="2,2,315,0" Height="36" VerticalAlignment="Top" Background="Gainsboro" DataContext="{StaticResource guestViewSource}">
+                <Button Name="btnDelete" Content="Delete Guest" Command="{StaticResource DeleteGuestCommand}" FontSize="11" Width="120" Style="{StaticResource NavButton}"/>
+                <Button Name="btnAdd" Content="New Guest" Command="{StaticResource AddCommand}" FontSize="11" Width="120" Style="{StaticResource NavButton}"/>
+                <Button Name="btnUpdate" Content="Update Info" Command="{StaticResource UpdateCommand}" FontSize="11" Width="120" Style="{StaticResource NavButton}"/>
+            </StackPanel>
+            <Grid x:Name="existingGuestGrid" Grid.Row="1" HorizontalAlignment="Left" Margin="5" Visibility="Visible" VerticalAlignment="Top" Background="AntiqueWhite" DataContext="{StaticResource guestViewSource}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" MinWidth="233"/>
+                    <ColumnDefinition Width="Auto" MinWidth="247"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Content="First Name:" Grid.Row="0" Style="{StaticResource Label}"/>
+                <TextBox x:Name="guestFNameTextBox" Grid.Row="0" Style="{StaticResource GuestTextBox}"
+                  Text="{Binding GuestFName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                <Label Content="Middle Initial:" Grid.Row="1" Style="{StaticResource Label}"/>
+                <TextBox x:Name="MiddleInitialTextBox" Grid.Row="1" Style="{StaticResource GuestTextBox}"
+                  Text="{Binding GuestMiddleInitial, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                <Label Content="Last Name:" Grid.Row="2" Style="{StaticResource Label}"/>
+                <TextBox x:Name="guestLNameTextBox" Grid.Row="2" Style="{StaticResource GuestTextBox}"
+                  Text="{Binding GuestLName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                <Label Content="Gender:" Grid.Row="3" Style="{StaticResource Label}"/>
+                <TextBox x:Name="guestGenderTextBox" Grid.Row="3" Style="{StaticResource GuestTextBox}"
+                  Text="{Binding GuestGender, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                <Label Content="Date Of Birth:" Grid.Row="4" Style="{StaticResource Label}"/>
+                <DatePicker x:Name="guestDateOfBirthDatePicker" HorizontalAlignment="Left" Margin="-122,4,0,4" Grid.Column="1" Grid.Row="4" 
+                  SelectedDate="{Binding GuestDateOfBirth, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, UpdateSourceTrigger=PropertyChanged}"/>
+                <Label Content="Social Security:" Grid.Column="1" Grid.Row="0" Style="{StaticResource Label}"/>
+                <TextBox x:Name="guestSocialSecurityTextBox" Grid.Column="1" Grid.Row="0" Style="{StaticResource GuestTextBox}"
+                  Text="{Binding GuestSocialSecurity, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                <Label Content="Phone Number:" Grid.Column="1" Grid.Row="1" Style="{StaticResource Label}"/>
+                <TextBox x:Name="guestPhoneNumberTextBox" Grid.Column="1" Grid.Row="1" Style="{StaticResource GuestTextBox}"
+                  Text="{Binding GuestPhoneNumber, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                <Label Content="Services:" Grid.Column="1" Grid.Row="2" Style="{StaticResource Label}"/>
+                <TextBox x:Name="guestServicesTextBox" Grid.Column="1" Grid.Row="2" Style="{StaticResource GuestTextBox}"
+                  Text="{Binding GuestServices, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                <Label Content="Intake Complete?:" Grid.Column="1" Grid.Row="3" Style="{StaticResource Label}"/>
+                <CheckBox x:Name="guestIntakeCompleteCheckBox" Margin="120,15,0,9" Grid.Column="1" Grid.Row="3"
+                  IsChecked="{Binding GuestIntakeComplete, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                
+            </Grid>
+            <Grid x:Name="newGuestGrid" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=newGuest, UpdateSourceTrigger=Explicit}" Visibility="Collapsed" Background="CornflowerBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" MinWidth="233"/>
+                    <ColumnDefinition Width="Auto" MinWidth="233"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Content="First Name:" Grid.Row="0" Style="{StaticResource Label}"/>
+                <TextBox x:Name="add_guestFNameTextBox" Grid.Row="0" Style="{StaticResource GuestTextBox}"
+                  Text="{Binding GuestFName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true }"/>
+                <Label Content="Middle Initial:" Grid.Row="1" Style="{StaticResource Label}"/>
+                <TextBox x:Name="add_guestMInitialTextBox" Grid.Row="1" Style="{StaticResource GuestTextBox}"
+                  Text="{Binding GuestMInitial, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                <Label Content="Last Name:" Grid.Row="2" Style="{StaticResource Label}"/>
+                <TextBox x:Name="add_guestLNameTextBox" Grid.Row="2" Style="{StaticResource GuestTextBox}"
+                  Text="{Binding GuestLName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                <Label Content="Gender:" Grid.Row="3" Style="{StaticResource Label}"/>
+                <TextBox x:Name="add_guestGenderTextBox" Grid.Row="3" Style="{StaticResource GuestTextBox}"
+                  Text="{Binding GuestGender, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                <Label Content="Date of Birth:" Grid.Row="4" Style="{StaticResource Label}"/>
+                <DatePicker x:Name="add_guestDateOfBirthDatePicker" HorizontalAlignment="Left" Margin="-122,4,0,4" Grid.Column="1" Grid.Row="4" 
+                  SelectedDate="{Binding GuestDateOfBirth, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, UpdateSourceTrigger=PropertyChanged}"/>
+                <Label Content="Social Security:" Grid.Column="1" Grid.Row="0" Style="{StaticResource Label}"/>
+                <TextBox x:Name="add_guestSocialSecurityTextBox" Grid.Column="1" Grid.Row="0" Style="{StaticResource GuestTextBox}"
+                  Text="{Binding GuestSocialSecurity, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                <Label Content="Phone Number:" Grid.Column="1" Grid.Row="1" Style="{StaticResource Label}"/>
+                <TextBox x:Name="add_guestPhoneNumberTextBox" Grid.Column="1" Grid.Row="1" Style="{StaticResource GuestTextBox}"
+                  Text="{Binding GuestPhoneNumber, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                <Label Content="Services:" Grid.Column="1" Grid.Row="2" Style="{StaticResource Label}"/>
+                <TextBox x:Name="add_guestServicesTextBox" Grid.Column="1" Grid.Row="2" Style="{StaticResource GuestTextBox}"
+                  Text="{Binding GuestServices, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                <Label Content="Intake Complete?:" Grid.Column="1" Grid.Row="3" Style="{StaticResource Label}"/>
+                <CheckBox x:Name="add_guestIntakeCompleteCheckBox" Margin="120,15,0,9" Grid.Column="1" Grid.Row="3"
+                  IsChecked="{Binding GuestIntakeComplete, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+            </Grid>
+            
+        </Grid>
+    </Grid>
+</UserControl>
