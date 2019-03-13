@@ -52,14 +52,12 @@
                 <DataGridTemplateColumn Header="31" CellTemplate="{StaticResource DateTemplate}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Grid Margin="668,10,13.333,355.667">
-            <Button x:Name="AddNewGuestBtn" Content="New Guest" HorizontalAlignment="Left" Margin="0,31,0,-0.667" Width="97" Click="AddNewGuestBtn_Click"/>
-            <Label Content="Search for Guest:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="Guest Name" VerticalAlignment="Top" Width="118" Margin="105,0,0,0"/>
-            <Button Content="View Reports" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Height="24" RenderTransformOrigin="0.5,0.538" Margin="228,31,0,0"/>
-            <Button Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Height="26" Margin="228,0,0,0"/>
-            <Button Content="Update Guest Stays" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Height="24" Margin="105,31,0,0"/>
-        </Grid>
+        <Button x:Name="AddNewGuestBtn" Content="New Guest" HorizontalAlignment="Left" VerticalAlignment="Top" Width="97" Height="24"  Click="AddNewGuestBtn_Click" Margin="668,41,0,0"/>
+        <Label Content="Search for Guest:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="668,10,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" Text="Guest Name" TextAlignment="Left" VerticalAlignment="Top" Width="118" Margin="773,10,0,0"/>
+        <Button Content="View Reports" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Height="24" RenderTransformOrigin="0.5,0.538" Margin="896,41,0,0"/>
+        <Button Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Height="24" Margin="896,10,0,0"/>
+        <Button Content="Update Guest Stays" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Height="24" Margin="773,41,0,0"/>
         <Label Content="February 2019" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="25" FontWeight="Bold"/>
     </Grid>
 </Window>
